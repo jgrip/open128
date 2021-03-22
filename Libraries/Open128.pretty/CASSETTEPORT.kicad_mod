@@ -1,0 +1,98 @@
+(module CASSETTEPORT (layer F.Cu) (tedit 5DC72FBB)
+  (fp_text reference CN2 (at -1.8034 3.5433) (layer F.SilkS)
+    (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify left bottom))
+  )
+  (fp_text value CASSETTEPORT (at -0.2921 -10.0584) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text user 1 (at 10.033 2.5273) (layer F.SilkS)
+    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+  )
+  (fp_text user 6 (at -9.8679 2.4384) (layer F.SilkS)
+    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+  )
+  (pad 6 connect custom (at -9.906 0) (size 2.54 2.54) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad 5 connect custom (at -5.9436 0) (size 2.54 2.54) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad 4 connect custom (at -1.9812 0) (size 2.54 2.54) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad 3 connect custom (at 1.9812 0) (size 2.54 2.54) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad 2 connect custom (at 5.9436 0) (size 2.54 2.54) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad 1 connect custom (at 9.906 0) (size 2.54 2.54) (layers F.Cu F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad F connect custom (at -9.906 0) (size 2.54 2.54) (layers B.Cu B.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad E connect custom (at -5.9436 0) (size 2.54 2.54) (layers B.Cu B.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad D connect custom (at -1.9812 0) (size 2.54 2.54) (layers B.Cu B.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad A connect custom (at 9.906 0) (size 2.54 2.54) (layers B.Cu B.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad B connect custom (at 5.9436 0) (size 2.54 2.54) (layers B.Cu B.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+  (pad C connect custom (at 1.9812 0) (size 2.54 2.54) (layers B.Cu B.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1.27 0) (xy 1.27 0) (xy 1.27 -8.255) (xy -1.27 -8.255)) (width 0))
+    ))
+)

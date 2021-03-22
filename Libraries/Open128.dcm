@@ -1,0 +1,201 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 23128
+D 16k x 8 Mask ROM
+K 16k,mask,rom
+$ENDCMP
+#
+$CMP 23256
+D 16k x 8 Mask ROM
+K 16k,mask,rom
+$ENDCMP
+#
+$CMP 2364
+D MOS Technology 8192x8 Static Read Only Memory (ROM)
+K 2364,rom
+F https://archive.org/download/mos_2364_rom_feb_1980/mos_2364_rom_feb_1980.pdf
+$ENDCMP
+#
+$CMP 6116SA
+D CMOS Static RAM 2k (16k x 8bit)
+K cmos,static,ram,2k
+F https://www.idt.com/document/dst/6116sala-data-sheet
+$ENDCMP
+#
+$CMP 6526
+D MOS Technology Complex Interface Adapter (CIA)
+K cia,complex interface adapter,peripheral interface device
+F https://archive.org/download/mos_6526_cia_recreated/mos_6526_cia_recreated.pdf
+$ENDCMP
+#
+$CMP 6581
+D Sound Interface Device (SID)
+K sid,sound interface device,sound chip,sound generator
+F https://archive.org/download/mos_6581_sid_preliminary_october_1982/mos_6581_sid_preliminary_october_1982.pdf
+$ENDCMP
+#
+$CMP 8502
+D 8-bit microprocessor with I/O
+K cpu,mpu,microprocessor
+$ENDCMP
+#
+$CMP 8520
+D MOS Technology Complex Interface Adapter (CIA)
+K cia,complex interface adapter,peripheral interface device
+F https://archive.org/download/mos_6526_cia_recreated/mos_6526_cia_recreated.pdf
+$ENDCMP
+#
+$CMP 8563
+D Commodore 128 80-column VDC
+K commodore,128,vdc,video
+$ENDCMP
+#
+$CMP 8564
+D Video Interface Chip IIe (VIC-IIe)
+K vic-iie,vic,video interface chip,graphics chip
+F https://archive.org/download/mos_6567_vic_ii_preliminary/mos_6567_vic_ii_preliminary.pdf
+$ENDCMP
+#
+$CMP 8580
+D Sound Interface Device (SID)
+K sid,sound interface device,sound chip,sound generator
+F https://archive.org/download/mos_6581_sid_preliminary_october_1982/mos_6581_sid_preliminary_october_1982.pdf
+$ENDCMP
+#
+$CMP 8701
+D Clock Generator, used in the Commodore 64 (board revisions 250425-01 and later)
+K clock c64
+F https://archive.org/download/mos8701datapage/MOS8701-datapage.pdf
+$ENDCMP
+#
+$CMP 8721
+D Commodore 128 PLA
+K commodore,128,pla
+$ENDCMP
+#
+$CMP 8722
+D Commodore 128 MMU
+K commodore,128,mmu
+$ENDCMP
+#
+$CMP 9VAC1
+D Power symbol creates a global label with name "9VAC1" (phase 1 of 9V AC supply)
+K power-flag
+$ENDCMP
+#
+$CMP 9VAC2
+D Power symbol creates a global label with name "9VAC2" (phase 2 of 9V AC supply)
+K power-flag
+$ENDCMP
+#
+$CMP C128D_Power_Conn
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP C128_power_conn
+D C128 Square DIN power connector
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_02x06_Edge
+D 12-pin Edge connector, double row, 02x06, top/bottom pin numbering scheme (row 1: numbers, row2: letters)
+K connector edge
+F ~
+$ENDCMP
+#
+$CMP Conn_02x12_Edge
+D 24-pin Edge connector, double row, 02x12, top/bottom pin numbering scheme (row 1: numbers, row2: letters)
+K connector edge
+F ~
+$ENDCMP
+#
+$CMP Conn_02x22_Edge
+D 44-pin Edge connector, double row, 02x22, top/bottom pin numbering scheme (row 1: numbers, row2: letters)
+K connector edge
+F ~
+$ENDCMP
+#
+$CMP Ferrite_Bead
+D Ferrite bead, small symbol
+K L ferrite bead inductor filter
+F ~
+$ENDCMP
+#
+$CMP Filter-Power-C128
+D Commodore 128 line filter assembly
+K commodore 128 line filter
+$ENDCMP
+#
+$CMP Power_switch
+D Double Pole Single Throw (DPST) Switch
+K switch dual double-pole single-throw OFF-ON
+F ~
+$ENDCMP
+#
+$CMP RF_Modulator
+D Commodore 128 RF Modulator module
+K commodore,128,rf-modulator
+$ENDCMP
+#
+$CMP R_Network07_Split
+D 7 resistor network (split), star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP R_Network08_Split
+D 8 resistor network (split), star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP R_Network09_Split
+D 9 resistor network (split), star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP R_Pack04_SIP_Split
+D 4 resistor network (split), parallel topology, isolated resistors, SIP package, small symbol
+K R network parallel-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP Reset_Switch
+D Single Pole Single Throw (SPST) switch
+K switch lever
+F ~
+$ENDCMP
+#
+$CMP Serial_DIN
+D Generic shielded connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP TMS4164
+D 65536-Bit Dynamic Random-Access Memory (DRAM)
+K DRAM,RAM
+F https://archive.org/download/tms4164datasheetnov85/TMS4164-datasheet-nov85.pdf
+$ENDCMP
+#
+$CMP TMS4464
+D 65536x4-Bbit Dynamic Random-Access Memory (DRAM)
+K DRAM,RAM
+$ENDCMP
+#
+$CMP UNREG+9V
+D Power symbol creates a global label with name "UNREG+9V"
+K power-flag
+$ENDCMP
+#
+$CMP video_din
+D 8-pin din, shielded
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
