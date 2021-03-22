@@ -1,7 +1,7 @@
 # open128
 
 
-![Render of PCB](https://github.com/jgrip/open128/Pictures/open128-render.jpg)
+![Render of PCB](https://raw.githubusercontent.com/jgrip/open128/main/Pictures/open128-render.jpg)
 
 This is a clone of the Commodore 128 home computer made with KiCad, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
