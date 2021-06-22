@@ -350,11 +350,11 @@ F 3 "" H 2550 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 2950 2550 3000
-Text HLabel 5550 2050 2    50   Output ~ 0
+Text HLabel 6600 2050 2    50   Output ~ 0
 ϕCOLOR
 Wire Wire Line
-	3900 2050 5550 2050
-Text HLabel 5550 1950 2    50   Output ~ 0
+	3900 2050 6600 2050
+Text HLabel 6600 1950 2    50   Output ~ 0
 ϕDOT
 Wire Wire Line
 	3900 1950 4100 1950
@@ -363,7 +363,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 1750 4250 1750
 Wire Wire Line
-	4100 1950 5550 1950
+	4100 1950 6600 1950
 $Comp
 L 74xx:74LS06 U29
 U 1 1 5DC57B72
@@ -376,25 +376,25 @@ F 4 "595-SN74LS06N" H 4550 1750 50  0001 C CNN "Mouser Part"
 	1    4550 1750
 	1    0    0    -1  
 $EndComp
-Text HLabel 5550 1750 2    50   Output ~ 0
+Text HLabel 6600 1750 2    50   Output ~ 0
 ~ϕDOT
 Wire Wire Line
-	5550 1750 5250 1750
+	6600 1750 6300 1750
 Connection ~ 4100 1950
 $Comp
 L Open128:Ferrite_Bead FB18
 U 1 1 5DC5C94F
-P 5150 1750
-F 0 "FB18" V 5005 1750 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 5004 1750 50  0001 C CNN
-F 2 "Open128:Ferrite_Bead_vertical" V 5080 1750 50  0001 C CNN
-F 3 "~" H 5150 1750 50  0001 C CNN
-F 4 "81-BL02RN2R1M2B" H 5150 1750 50  0001 C CNN "Mouser Part"
-	1    5150 1750
+P 6200 1750
+F 0 "FB18" V 6055 1750 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 6054 1750 50  0001 C CNN
+F 2 "Open128:Ferrite_Bead_vertical" V 6130 1750 50  0001 C CNN
+F 3 "~" H 6200 1750 50  0001 C CNN
+F 4 "81-BL02RN2R1M2B" H 6200 1750 50  0001 C CNN "Mouser Part"
+	1    6200 1750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5050 1750 4850 1750
+	6100 1750 5400 1750
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E03C747
@@ -425,4 +425,34 @@ Wire Wire Line
 Wire Wire Line
 	3500 2850 3400 2850
 Connection ~ 3400 2850
+$Comp
+L Device:R R47
+U 1 1 60D4A27C
+P 5400 1450
+F 0 "R47" H 5470 1496 50  0000 L CNN
+F 1 "1k" V 5400 1400 50  0000 L CNN
+F 2 "Open128:R_Axial_DIN0309_L9.0mm_D2.5mm_P12.70mm_Horizontal" V 5330 1450 50  0001 C CNN
+F 3 "~" H 5400 1450 50  0001 C CNN
+F 4 "660-MF1/4DCT52R5600F" H 5400 1450 50  0001 C CNN "Mouser Part"
+	1    5400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60D4B17E
+P 5400 1200
+F 0 "#PWR?" H 5400 1050 50  0001 C CNN
+F 1 "+5V" H 5415 1373 50  0000 C CNN
+F 2 "" H 5400 1200 50  0001 C CNN
+F 3 "" H 5400 1200 50  0001 C CNN
+	1    5400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1200 5400 1300
+Wire Wire Line
+	5400 1600 5400 1750
+Connection ~ 5400 1750
+Wire Wire Line
+	5400 1750 4850 1750
 $EndSCHEMATC
