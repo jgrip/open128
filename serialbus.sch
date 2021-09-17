@@ -307,8 +307,6 @@ Connection ~ 3250 2000
 Wire Wire Line
 	3250 2000 3400 2000
 NoConn ~ 5000 1350
-Text HLabel 4500 1500 0    50   Input ~ 0
-~DRESET
 Text HLabel 4800 3750 0    50   Input ~ 0
 ~EXTRES
 Wire Wire Line
@@ -748,8 +746,6 @@ Wire Wire Line
 Connection ~ 7600 3000
 Wire Wire Line
 	9150 3100 10600 3100
-Text HLabel 10600 3100 2    50   Input ~ 0
-128_64
 $Comp
 L 74xx:74LS14 U16
 U 6 1 5DDD3954
@@ -766,8 +762,6 @@ Wire Wire Line
 	9300 2900 9150 2900
 Wire Wire Line
 	9900 2900 10250 2900
-Text HLabel 10600 2900 2    50   Input ~ 0
-~FSDIR
 Wire Wire Line
 	8050 4900 10250 4900
 Wire Wire Line
@@ -932,4 +926,10 @@ Wire Wire Line
 	4800 4750 4750 4750
 Wire Wire Line
 	4750 4750 4750 4800
+Text GLabel 4500 1500 0    50   Input ~ 0
+~DRESET
+Text GLabel 10600 2900 2    50   Input ~ 0
+~FSDIR
+Text GLabel 10600 3100 2    50   Input ~ 0
+128_64
 $EndSCHEMATC

@@ -221,8 +221,6 @@ Entry Wire Line
 	2400 5500 2500 5600
 Text HLabel 1000 3550 0    50   Input ~ 0
 TA[8..15]
-Text HLabel 1000 6450 0    50   Input ~ 0
-128_64
 $Comp
 L Jumper:SolderJumper_2_Open J6
 U 1 1 5DBDF6AD
@@ -1293,8 +1291,6 @@ F 3 "" H 9400 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9400 2850 9400 2900
-Text HLabel 1000 6350 0    50   Input ~ 0
-CAPSLK
 Wire Wire Line
 	1000 6450 1150 6450
 Wire Wire Line
@@ -1761,4 +1757,8 @@ Wire Bus Line
 	2400 1350 2400 3750
 Wire Bus Line
 	5400 1350 5400 3750
+Text GLabel 1000 6450 0    50   Input ~ 0
+128_64
+Text GLabel 1000 6350 0    50   Input ~ 0
+CAPSLK
 $EndSCHEMATC

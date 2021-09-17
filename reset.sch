@@ -378,8 +378,6 @@ Wire Wire Line
 Connection ~ 7500 1850
 Wire Wire Line
 	7500 1850 7500 1550
-Text HLabel 9600 1550 2    50   Input ~ 0
-BA
 Wire Wire Line
 	9600 1550 9350 1550
 $Comp
@@ -555,8 +553,6 @@ Wire Wire Line
 	9100 4000 9100 4150
 Wire Wire Line
 	9100 4150 8950 4150
-Text HLabel 8850 4500 0    50   Output ~ 0
-~DRESET
 Wire Wire Line
 	9100 4150 9100 4500
 Wire Wire Line
@@ -673,4 +669,8 @@ Wire Wire Line
 Connection ~ 7500 4150
 Wire Wire Line
 	7500 4150 7650 4150
+Text GLabel 9600 1550 2    50   Input ~ 0
+BA
+Text GLabel 8850 4500 0    50   Output ~ 0
+~DRESET
 $EndSCHEMATC

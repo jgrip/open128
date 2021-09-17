@@ -468,12 +468,6 @@ Text HLabel 1000 3200 0    50   BiDi ~ 0
 D[0..7]
 Wire Wire Line
 	2850 4200 1000 4200
-Text HLabel 1000 4200 0    50   Input ~ 0
-2MHZ
-Text HLabel 1250 4600 0    50   Input ~ 0
-F_R~W
-Text HLabel 1250 4800 0    50   Input ~ 0
-~LP
 Wire Wire Line
 	1250 4600 2850 4600
 Wire Wire Line
@@ -1644,4 +1638,10 @@ Wire Bus Line
 	4300 1250 4300 3000
 Wire Bus Line
 	8250 1250 8250 2650
+Text GLabel 1250 4600 0    50   Input ~ 0
+F_R~W
+Text GLabel 1250 4800 0    50   Input ~ 0
+~LP
+Text GLabel 1000 4200 0    50   Input ~ 0
+2MHZ
 $EndSCHEMATC

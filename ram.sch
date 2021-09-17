@@ -916,8 +916,6 @@ F 3 "" H 11000 1050 50  0001 C CNN
 	1    11000 1050
 	1    0    0    -1  
 $EndComp
-Text HLabel 1000 650  0    50   Input ~ 0
-~RAS
 Wire Wire Line
 	1000 650  1200 650 
 Wire Wire Line
@@ -966,8 +964,6 @@ Wire Wire Line
 Wire Wire Line
 	10000 650  8900 650 
 Connection ~ 8900 650 
-Text HLabel 1000 550  0    50   Input ~ 0
-~DWE
 Wire Wire Line
 	1000 550  1850 550 
 Wire Wire Line
@@ -2554,8 +2550,6 @@ F 4 "595-SN74F32N" H 1450 5250 50  0001 C CNN "Mouser Part"
 	4    1450 5250
 	1    0    0    -1  
 $EndComp
-Text HLabel 1000 5150 0    50   Input ~ 0
-~CAS
 Wire Wire Line
 	1000 5150 1050 5150
 Wire Wire Line
@@ -2565,12 +2559,8 @@ Wire Wire Line
 Connection ~ 1050 5150
 Wire Wire Line
 	1050 5150 1150 5150
-Text HLabel 1000 4400 0    50   Input ~ 0
-~GCAS0
 Wire Wire Line
 	1000 4400 1150 4400
-Text HLabel 1000 5350 0    50   Input ~ 0
-~GCAS1
 Wire Wire Line
 	1000 5350 1150 5350
 Wire Wire Line
@@ -2713,4 +2703,14 @@ Wire Bus Line
 	2100 6350 10550 6350
 Wire Bus Line
 	2100 3350 10550 3350
+Text GLabel 1000 5150 0    50   Input ~ 0
+~CAS
+Text GLabel 1000 550  0    50   Input ~ 0
+~DWE
+Text GLabel 1000 650  0    50   Input ~ 0
+~RAS
+Text GLabel 1000 4400 0    50   Input ~ 0
+~GCAS0
+Text GLabel 1000 5350 0    50   Input ~ 0
+~GCAS1
 $EndSCHEMATC

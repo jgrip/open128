@@ -280,16 +280,10 @@ Text Label 6400 4950 0    50   ~ 0
 D6
 Text Label 6400 5050 0    50   ~ 0
 D7
-Text HLabel 3550 2050 0    50   Input ~ 0
-~IRQ
-Text HLabel 3550 2150 0    50   Input ~ 0
-~NMI
 Wire Wire Line
 	3550 2050 3700 2050
 Wire Wire Line
 	4500 2150 3550 2150
-Text HLabel 4150 5450 0    50   Input ~ 0
-2MHZ
 Wire Wire Line
 	4150 5450 4500 5450
 Wire Bus Line
@@ -317,10 +311,8 @@ F 3 "" H 3950 3350 50  0001 C CNN
 	1    4900 3650
 	1    0    0    -1  
 $EndComp
-Text HLabel 7000 4150 2    50   Input ~ 0
-CAPLK
 Wire Wire Line
-	5300 4150 7000 4150
+	5300 4150 5550 4150
 $Comp
 L power:GND #PWR0238
 U 1 1 5DD95CAA
@@ -480,12 +472,8 @@ F 4 "595-SN74LS06N" H 2050 4650 50  0001 C CNN "Mouser Part"
 	5    2050 4650
 	1    0    0    -1  
 $EndComp
-Text HLabel 1100 4650 0    50   Input ~ 0
-~BUSACK
 Wire Wire Line
 	2850 4650 2800 4650
-Text HLabel 1100 4850 0    50   Input ~ 0
-DMA
 Wire Wire Line
 	1100 4850 2850 4850
 Wire Wire Line
@@ -527,14 +515,8 @@ Wire Wire Line
 Connection ~ 2500 4650
 Wire Wire Line
 	2500 4650 2350 4650
-Text HLabel 1100 4400 0    50   Input ~ 0
-~PLA_Z80EN
-Text HLabel 1100 5400 0    50   Input ~ 0
-~MMU_Z80EN
 Wire Wire Line
 	1100 5400 2000 5400
-Text HLabel 1100 5600 0    50   Input ~ 0
-BA
 Wire Wire Line
 	1100 5600 2000 5600
 Wire Wire Line
@@ -570,64 +552,44 @@ $EndComp
 $Comp
 L 74xx:74LS08 U?
 U 2 1 5DD316EE
-P 8100 5550
+P 7550 5550
 AR Path="/5DD316EE" Ref="U?"  Part="2" 
 AR Path="/5DD7C71F/5DD316EE" Ref="U8"  Part="2" 
-F 0 "U8" H 8100 5875 50  0000 C CNN
-F 1 "74LS08" H 8100 5784 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 8100 5550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 8100 5550 50  0001 C CNN
-F 4 "595-SN74LS08N" H 8100 5550 50  0001 C CNN "Mouser Part"
-	2    8100 5550
+F 0 "U8" H 7550 5875 50  0000 C CNN
+F 1 "74LS08" H 7550 5784 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7550 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7550 5550 50  0001 C CNN
+F 4 "595-SN74LS08N" H 7550 5550 50  0001 C CNN "Mouser Part"
+	2    7550 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS07 U?
 U 1 1 5DD316F6
-P 8900 5550
+P 8350 5550
 AR Path="/5DD316F6" Ref="U?"  Part="1" 
 AR Path="/5DD7C71F/5DD316F6" Ref="U57"  Part="1" 
-F 0 "U57" H 8900 5867 50  0000 C CNN
-F 1 "7407" H 8900 5776 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 8900 5550 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8900 5550 50  0001 C CNN
-F 4 "595-SN74LS07N" H 8900 5550 50  0001 C CNN "Mouser Part"
-	1    8900 5550
+F 0 "U57" H 8350 5867 50  0000 C CNN
+F 1 "7407" H 8350 5776 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 8350 5550 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8350 5550 50  0001 C CNN
+F 4 "595-SN74LS07N" H 8350 5550 50  0001 C CNN "Mouser Part"
+	1    8350 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 5550 8500 5550
+	7850 5550 7950 5550
 Wire Wire Line
-	9200 5550 9400 5550
+	8650 5550 8850 5550
 Wire Wire Line
-	8500 5550 8500 5900
+	7950 5550 7950 5900
 Wire Wire Line
-	8500 5900 9950 5900
-Connection ~ 8500 5550
+	7950 5900 9100 5900
+Connection ~ 7950 5550
 Wire Wire Line
-	8500 5550 8600 5550
-Text Label 7350 5450 0    50   ~ 0
-8052_RW
-Text Label 7350 5650 0    50   ~ 0
-Z80_RW
-Text Label 9600 5550 0    50   ~ 0
-R~W
-Text Label 9600 5900 0    50   ~ 0
-F_R~W
+	7950 5550 8050 5550
 Wire Wire Line
-	6900 5450 7800 5450
-Text HLabel 1100 5950 0    50   Input ~ 0
-Z80_RW
-Wire Wire Line
-	1100 5950 6900 5950
-Wire Wire Line
-	6900 5950 6900 5650
-Wire Wire Line
-	6900 5650 7800 5650
-Text HLabel 9950 5550 2    50   Output ~ 0
-R~W
-Text HLabel 9950 5900 2    50   Output ~ 0
-F_R~W
+	6900 5450 7250 5450
 Text GLabel 4250 1850 0    50   Input ~ 0
 ~RESET
 $Comp
@@ -663,33 +625,59 @@ Wire Wire Line
 $Comp
 L Open128:R_Network07_Split RP1
 U 1 1 5DC29B15
-P 9400 5300
-F 0 "RP1" H 9487 5346 50  0000 L CNN
-F 1 "1k" V 9400 5250 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP8" H 9450 5175 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9400 5300 50  0001 C CNN
-F 4 "652-4608X-1LF-1K" H 9400 5300 50  0001 C CNN "Mouser Part"
-	1    9400 5300
+P 8850 5300
+F 0 "RP1" H 8937 5346 50  0000 L CNN
+F 1 "1k" V 8850 5250 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP8" H 8900 5175 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8850 5300 50  0001 C CNN
+F 4 "652-4608X-1LF-1K" H 8850 5300 50  0001 C CNN "Mouser Part"
+	1    8850 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0421
 U 1 1 5DC2A5CE
-P 9400 5050
-F 0 "#PWR0421" H 9400 4900 50  0001 C CNN
-F 1 "+5V" H 9415 5223 50  0000 C CNN
-F 2 "" H 9400 5050 50  0001 C CNN
-F 3 "" H 9400 5050 50  0001 C CNN
-	1    9400 5050
+P 8850 5050
+F 0 "#PWR0421" H 8850 4900 50  0001 C CNN
+F 1 "+5V" H 8865 5223 50  0000 C CNN
+F 2 "" H 8850 5050 50  0001 C CNN
+F 3 "" H 8850 5050 50  0001 C CNN
+	1    8850 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5050 9400 5150
+	8850 5050 8850 5150
 Wire Wire Line
-	9400 5450 9400 5550
-Connection ~ 9400 5550
+	8850 5450 8850 5550
+Connection ~ 8850 5550
 Wire Wire Line
-	9400 5550 9950 5550
+	8850 5550 9100 5550
+Text GLabel 3550 2050 0    50   Input ~ 0
+~IRQ
+Text GLabel 1100 5600 0    50   Input ~ 0
+BA
+Text GLabel 9100 5550 2    50   Output ~ 0
+R~W
+Text GLabel 9100 5900 2    50   Output ~ 0
+F_R~W
+Text GLabel 3550 2150 0    50   Input ~ 0
+~NMI
+Text GLabel 1100 4850 0    50   Input ~ 0
+~DMA
+Text GLabel 4150 5450 0    50   Input ~ 0
+2MHZ
+Text GLabel 7100 5650 0    50   Input ~ 0
+Z80_R~W
+Text GLabel 1100 4650 0    50   Input ~ 0
+~BUSACK
+Text GLabel 1100 5400 0    50   Input ~ 0
+~MMU_Z80EN
+Text GLabel 1100 4400 0    50   Input ~ 0
+~PLA_Z80EN
+Text GLabel 5550 4150 2    50   Input ~ 0
+CAPSLK
+Wire Wire Line
+	7100 5650 7250 5650
 Wire Bus Line
 	6500 1000 6500 3950
 Wire Bus Line

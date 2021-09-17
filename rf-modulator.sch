@@ -24,14 +24,12 @@ F 3 "" H 5300 3850 50  0001 C CNN
 	1    5400 3750
 	1    0    0    -1  
 $EndComp
-Text HLabel 3600 3950 0    50   Input ~ 0
-AUDIO
-Text HLabel 2600 3550 0    50   Input ~ 0
+Text HLabel 2500 3550 0    50   Input ~ 0
 SYNC_LUM
-Text HLabel 2600 3750 0    50   Input ~ 0
+Text HLabel 2500 3750 0    50   Input ~ 0
 CHROMA
 Wire Wire Line
-	4700 3550 3150 3550
+	4700 3550 3050 3550
 $Comp
 L Device:EMI_Filter_LCL EMI39
 U 1 1 5DE4EC58
@@ -69,7 +67,7 @@ F 3 "" H 4800 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3750 2950 3750
+	2500 3750 2850 3750
 Wire Wire Line
 	3900 3950 3750 3950
 Wire Wire Line
@@ -298,8 +296,6 @@ F 8 ".1µ" H 10250 4400 50  0001 C CNN "Silkscreen Value"
 	1    10250 4400
 	0    1    1    0   
 $EndComp
-Text HLabel 10550 4400 2    50   Output ~ 0
-EXT_AUDIO
 Wire Wire Line
 	10550 4400 10400 4400
 Wire Wire Line
@@ -395,31 +391,31 @@ $EndComp
 $Comp
 L Open128:Ferrite_Bead FB19
 U 1 1 5DCF0C3A
-P 3050 3550
-F 0 "FB19" V 3200 3550 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 2904 3550 50  0001 C CNN
-F 2 "Open128:Ferrite_Bead_vertical" V 2980 3550 50  0001 C CNN
-F 3 "~" H 3050 3550 50  0001 C CNN
-F 4 "81-BL02RN2R1M2B" H 3050 3550 50  0001 C CNN "Mouser Part"
-	1    3050 3550
+P 2950 3550
+F 0 "FB19" V 3100 3550 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 2804 3550 50  0001 C CNN
+F 2 "Open128:Ferrite_Bead_vertical" V 2880 3550 50  0001 C CNN
+F 3 "~" H 2950 3550 50  0001 C CNN
+F 4 "81-BL02RN2R1M2B" H 2950 3550 50  0001 C CNN "Mouser Part"
+	1    2950 3550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2950 3550 2600 3550
+	2850 3550 2500 3550
 $Comp
 L Open128:Ferrite_Bead FB20
 U 1 1 5DCF15D6
-P 3050 3750
-F 0 "FB20" V 2900 3750 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 2904 3750 50  0001 C CNN
-F 2 "Open128:Ferrite_Bead_vertical" V 2980 3750 50  0001 C CNN
-F 3 "~" H 3050 3750 50  0001 C CNN
-F 4 "81-BL02RN2R1M2B" H 3050 3750 50  0001 C CNN "Mouser Part"
-	1    3050 3750
+P 2950 3750
+F 0 "FB20" V 2800 3750 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 2804 3750 50  0001 C CNN
+F 2 "Open128:Ferrite_Bead_vertical" V 2880 3750 50  0001 C CNN
+F 3 "~" H 2950 3750 50  0001 C CNN
+F 4 "81-BL02RN2R1M2B" H 2950 3750 50  0001 C CNN "Mouser Part"
+	1    2950 3750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3150 3750 4700 3750
+	3050 3750 4700 3750
 $Comp
 L Device:L L?
 U 1 1 5DE6ACB1
@@ -469,4 +465,8 @@ Wire Wire Line
 	8250 4750 8200 4750
 Wire Wire Line
 	8200 4750 8200 4800
+Text GLabel 10550 4400 2    50   Output ~ 0
+EXT_AUDIO
+Text GLabel 3600 3950 0    50   Input ~ 0
+AUDIO_OUT
 $EndSCHEMATC

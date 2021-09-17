@@ -288,10 +288,6 @@ Wire Wire Line
 	5900 3300 7100 3300
 Wire Wire Line
 	6650 3200 7100 3200
-Text HLabel 7100 3200 2    50   Output ~ 0
-POTY
-Text HLabel 7100 3300 2    50   Output ~ 0
-POTX
 Text Label 4850 2700 0    50   ~ 0
 COL7
 Text Label 4850 1850 0    50   ~ 0
@@ -302,8 +298,6 @@ Wire Wire Line
 	4400 4350 7100 4350
 Text Label 4400 4350 0    50   ~ 0
 ROW4
-Text HLabel 7100 4350 2    50   Output ~ 0
-~LP
 Wire Wire Line
 	5900 1450 5900 2300
 Wire Wire Line
@@ -381,4 +375,10 @@ Wire Bus Line
 	4750 1950 4750 4800
 Wire Bus Line
 	4300 2900 4300 4800
+Text GLabel 7100 3200 2    50   Output ~ 0
+POTY
+Text GLabel 7100 3300 2    50   Output ~ 0
+POTX
+Text GLabel 7100 4350 2    50   Output ~ 0
+~LP
 $EndSCHEMATC

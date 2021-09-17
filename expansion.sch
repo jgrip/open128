@@ -138,20 +138,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 2600 4650 2600
 Connection ~ 4500 2500
-Text HLabel 4000 2700 0    50   Output ~ 0
-~IRQ
-Text HLabel 4000 2800 0    50   Input ~ 0
-R~W
-Text HLabel 4000 2900 0    50   Input ~ 0
-ΦDOT
-Text HLabel 2250 3100 0    50   Output ~ 0
-~GAME
-Text HLabel 2250 3200 0    50   Output ~ 0
-~EXROM
-Text HLabel 4000 3500 0    50   Input ~ 0
-BA
-Text HLabel 2250 3600 0    50   Output ~ 0
-DMA
 Wire Wire Line
 	4650 3700 4450 3700
 Text Label 4600 3700 2    50   ~ 0
@@ -280,10 +266,6 @@ Wire Wire Line
 	4650 2800 4000 2800
 Wire Wire Line
 	4000 2700 4650 2700
-Text HLabel 6000 2700 2    50   Output ~ 0
-~NMI
-Text HLabel 6000 2800 2    50   Input ~ 0
-1MHZ
 Wire Wire Line
 	5150 2800 6000 2800
 Wire Wire Line
@@ -385,4 +367,22 @@ Wire Bus Line
 	4350 3800 4350 4600
 Wire Bus Line
 	5550 3000 5550 3900
+Text GLabel 4000 2700 0    50   Output ~ 0
+~IRQ
+Text GLabel 4000 3500 0    50   Input ~ 0
+BA
+Text GLabel 6000 2700 2    50   Output ~ 0
+~NMI
+Text GLabel 4000 2800 0    50   Input ~ 0
+R~W
+Text GLabel 4000 2900 0    50   Input ~ 0
+~ΦDOT
+Text GLabel 6000 2800 2    50   Input ~ 0
+1MHZ
+Text GLabel 2250 3600 0    50   Output ~ 0
+~DMA
+Text GLabel 2250 3100 0    50   Output ~ 0
+~GAME
+Text GLabel 2250 3200 0    50   Output ~ 0
+~EXROM
 $EndSCHEMATC

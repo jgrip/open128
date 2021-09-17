@@ -130,8 +130,6 @@ F 3 "https://www.idt.com/document/dst/6116sala-data-sheet" H 2350 5050 50  0001 
 	1    2350 4800
 	1    0    0    -1  
 $EndComp
-Text HLabel 4450 2850 0    50   Input ~ 0
-~LIGHTPEN
 Wire Wire Line
 	4450 2850 4700 2850
 NoConn ~ 4700 3800
@@ -254,10 +252,6 @@ Wire Bus Line
 	6150 1300 1850 1300
 Text HLabel 1000 1300 0    50   BiDi ~ 0
 D[0..7]
-Text HLabel 6800 2650 2    50   Output ~ 0
-BA
-Text HLabel 6800 2850 2    50   Output ~ 0
-~IRQ
 Wire Wire Line
 	5900 2850 6800 2850
 Wire Wire Line
@@ -282,10 +276,6 @@ Text Label 4550 5100 0    50   ~ 0
 K2
 Wire Bus Line
 	4450 5300 4350 5300
-Text HLabel 4350 5300 0    50   BiDi ~ 0
-K[0..2]
-Text HLabel 6550 7250 2    50   Output ~ 0
-2MHZ
 Entry Wire Line
 	4350 3150 4450 3050
 Wire Wire Line
@@ -494,8 +484,6 @@ Text Label 1800 4850 0    50   ~ 0
 SA6
 Text Label 1800 4950 0    50   ~ 0
 SA7
-Text HLabel 1000 5250 0    50   Input ~ 0
-CLRBNK
 Wire Wire Line
 	1000 5250 2000 5250
 Entry Wire Line
@@ -670,36 +658,18 @@ F 4 "595-SN74LS06N" H 7050 1150 50  0001 C CNN "Mouser Part"
 	5    7050 1150
 	1    0    0    -1  
 $EndComp
-Text HLabel 8000 1400 2    50   Output ~ 0
-AEC
-Text HLabel 8000 1150 2    50   Output ~ 0
-~AEC
-Text HLabel 6800 5250 2    50   Output ~ 0
-~RAS
-Text HLabel 6800 5350 2    50   Output ~ 0
-~CAS
 Wire Wire Line
 	6800 5350 5900 5350
-Text HLabel 4400 5750 0    50   Output ~ 0
-ΦZ80
 Wire Wire Line
 	4400 5750 4700 5750
-Text HLabel 4400 5850 0    50   Input ~ 0
-ΦCOLOR
-Text HLabel 4400 5950 0    50   Input ~ 0
-ΦDOT
 Wire Wire Line
 	4400 5950 4700 5950
 Wire Wire Line
 	4400 5850 4700 5850
-Text HLabel 4450 2650 0    50   Input ~ 0
-R~W
 Wire Wire Line
 	4450 2650 4700 2650
 Wire Wire Line
 	4250 2550 4700 2550
-Text HLabel 4500 4450 0    50   Input ~ 0
-~IOACC
 Wire Wire Line
 	4500 4450 4700 4450
 $Comp
@@ -732,10 +702,6 @@ Wire Wire Line
 	2900 7250 2450 7250
 Wire Wire Line
 	2450 7250 2450 7150
-Text HLabel 6550 6650 2    50   Output ~ 0
-1MHZ
-Text HLabel 6550 7150 2    50   Output ~ 0
-D1MHZ
 $Comp
 L Device:R R102
 U 1 1 5DAA9236
@@ -756,8 +722,6 @@ Wire Wire Line
 	2850 6750 2750 6750
 Wire Wire Line
 	2450 6550 2450 6450
-Text HLabel 1000 6750 0    50   Input ~ 0
-~GWE
 Wire Wire Line
 	1000 6750 2150 6750
 $Comp
@@ -915,31 +879,17 @@ S 7600 5450 1250 300
 U 5DE4C2CF
 F0 "RF Modulator and AV connectors" 50
 F1 "rf-modulator.sch" 50
-F2 "AUDIO" I R 8850 5550 50 
 F3 "SYNC_LUM" I L 7600 5650 50 
 F4 "CHROMA" I L 7600 5550 50 
-F5 "EXT_AUDIO" O R 8850 5650 50 
 $EndSheet
 Wire Wire Line
 	5900 5550 7600 5550
 Wire Wire Line
 	7600 5650 5900 5650
-Text HLabel 9750 5550 2    50   Input ~ 0
-AUDIO_OUT
-Text HLabel 9750 5650 2    50   Output ~ 0
-EXT_AUDIO
-Wire Wire Line
-	9750 5650 8850 5650
-Wire Wire Line
-	8850 5550 9750 5550
 Wire Wire Line
 	3900 4350 3900 6450
 Wire Wire Line
 	5900 5250 6800 5250
-Text HLabel 6800 4550 2    50   Output ~ 0
-VA6
-Text HLabel 6800 4650 2    50   Output ~ 0
-VA7
 Wire Wire Line
 	6000 1400 6550 1400
 Connection ~ 6000 1400
@@ -957,8 +907,6 @@ Wire Wire Line
 Connection ~ 3900 6450
 Wire Wire Line
 	3900 6450 3900 7400
-Text HLabel 4150 6450 2    50   Output ~ 0
-MUX
 Text GLabel 4250 2550 0    50   Input ~ 0
 ~CS_VIC
 Text GLabel 2950 5150 2    50   Input ~ 0
@@ -1079,6 +1027,30 @@ F 3 "" H 9100 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9100 2950 9100 3000
+Text GLabel 6800 2650 2    50   Output ~ 0
+BA
+Text GLabel 6800 2850 2    50   Output ~ 0
+~IRQ
+Text GLabel 4450 2650 0    50   Input ~ 0
+R~W
+Text GLabel 8000 1150 2    50   Output ~ 0
+~AEC
+Text GLabel 8000 1400 2    50   Output ~ 0
+AEC
+Text GLabel 4400 5850 0    50   Input ~ 0
+ΦCOLOR
+Text GLabel 4400 5950 0    50   Input ~ 0
+ΦDOT
+Text GLabel 4450 2850 0    50   Input ~ 0
+~LP
+Text GLabel 1000 5250 0    50   Input ~ 0
+CLRBNK
+Text GLabel 6550 6650 2    50   Output ~ 0
+1MHZ
+Text GLabel 6550 7150 2    50   Output ~ 0
+D1MHZ
+Text GLabel 6550 7250 2    50   Output ~ 0
+2MHZ
 Wire Bus Line
 	1550 1100 1550 5050
 Wire Wire Line
@@ -1101,4 +1073,22 @@ Wire Bus Line
 	1650 1200 1650 4850
 Wire Bus Line
 	6150 1300 6150 3650
+Text GLabel 4400 5750 0    50   Output ~ 0
+ΦZ80
+Text GLabel 4150 6450 2    50   Output ~ 0
+MUX
+Text GLabel 6800 5250 2    50   Output ~ 0
+~RAS
+Text GLabel 6800 5350 2    50   Output ~ 0
+~CAS
+Text GLabel 6800 4550 2    50   Output ~ 0
+VA6
+Text GLabel 6800 4650 2    50   Output ~ 0
+VA7
+Text GLabel 1000 6750 0    50   Input ~ 0
+~GWE
+Text GLabel 4500 4450 0    50   Input ~ 0
+~IOACC
+Text GLabel 4350 5300 0    50   BiDi ~ 0
+K[0..2]
 $EndSCHEMATC

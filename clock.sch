@@ -130,8 +130,6 @@ Wire Wire Line
 Connection ~ 2000 6450
 Wire Wire Line
 	3100 6450 3550 6450
-Text HLabel 3550 6450 2    50   Output ~ 0
-TOD
 Wire Wire Line
 	3300 2850 3350 2850
 Wire Wire Line
@@ -350,12 +348,8 @@ F 3 "" H 2550 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 2950 2550 3000
-Text HLabel 6600 2050 2    50   Output ~ 0
-ϕCOLOR
 Wire Wire Line
 	3900 2050 6600 2050
-Text HLabel 6600 1950 2    50   Output ~ 0
-ϕDOT
 Wire Wire Line
 	3900 1950 4100 1950
 Wire Wire Line
@@ -376,8 +370,6 @@ F 4 "595-SN74LS06N" H 4550 1750 50  0001 C CNN "Mouser Part"
 	1    4550 1750
 	1    0    0    -1  
 $EndComp
-Text HLabel 6600 1750 2    50   Output ~ 0
-~ϕDOT
 Wire Wire Line
 	6600 1750 6300 1750
 Connection ~ 4100 1950
@@ -438,10 +430,10 @@ F 4 "660-MF1/4DCT52R5600F" H 5400 1450 50  0001 C CNN "Mouser Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0448
 U 1 1 60D4B17E
 P 5400 1200
-F 0 "#PWR?" H 5400 1050 50  0001 C CNN
+F 0 "#PWR0448" H 5400 1050 50  0001 C CNN
 F 1 "+5V" H 5415 1373 50  0000 C CNN
 F 2 "" H 5400 1200 50  0001 C CNN
 F 3 "" H 5400 1200 50  0001 C CNN
@@ -455,4 +447,12 @@ Wire Wire Line
 Connection ~ 5400 1750
 Wire Wire Line
 	5400 1750 4850 1750
+Text GLabel 3550 6450 2    50   Output ~ 0
+TOD
+Text GLabel 6600 1750 2    50   Output ~ 0
+~ΦDOT
+Text GLabel 6600 1950 2    50   Output ~ 0
+ΦDOT
+Text GLabel 6600 2050 2    50   Output ~ 0
+ΦCOLOR
 $EndSCHEMATC

@@ -434,10 +434,6 @@ Text Label 2850 4850 0    50   ~ 0
 K2
 Wire Wire Line
 	2750 5050 3150 5050
-Text HLabel 3300 6500 3    50   Output ~ 0
-K[0..2]
-Text HLabel 3150 6500 3    50   Output ~ 0
-4080
 Wire Wire Line
 	3150 5050 3150 6200
 Entry Wire Line
@@ -581,8 +577,6 @@ F 3 "" H 2200 5650 50  0001 C CNN
 	1    2200 5650
 	1    0    0    -1  
 $EndComp
-Text HLabel 1500 6500 3    50   Output ~ 0
-CAPLK_SENSE
 Wire Wire Line
 	1900 6050 1900 6200
 Wire Wire Line
@@ -697,4 +691,10 @@ Wire Bus Line
 	3850 3150 3850 6500
 Wire Bus Line
 	3550 3950 3550 6500
+Text GLabel 1500 6500 3    50   Output ~ 0
+CAPSLK
+Text GLabel 3150 6500 3    50   Output ~ 0
+40_80
+Text GLabel 3300 6500 3    50   Output ~ 0
+K[0..2]
 $EndSCHEMATC

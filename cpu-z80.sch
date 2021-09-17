@@ -498,12 +498,8 @@ Text Label 5850 4000 0    50   ~ 0
 A15
 Wire Wire Line
 	4000 2500 4400 2500
-Text HLabel 4000 3200 0    50   Input ~ 0
-~IRQ
 Wire Wire Line
 	4000 3200 4400 3200
-Text HLabel 4000 3500 0    50   Output ~ 0
-~M1
 Wire Wire Line
 	4000 3500 4400 3500
 NoConn ~ 4400 3600
@@ -542,8 +538,6 @@ F 4 "595-SN74LS74AN" H 4050 6250 50  0001 C CNN "Mouser Part"
 	1    4050 6250
 	1    0    0    -1  
 $EndComp
-Text HLabel 10600 900  2    50   Input ~ 0
-D1MHZ
 Wire Wire Line
 	8850 2950 9250 2950
 Wire Wire Line
@@ -787,8 +781,6 @@ Wire Wire Line
 	8800 3850 8800 3900
 Wire Wire Line
 	8350 3350 8350 3400
-Text HLabel 5000 6350 0    50   Input ~ 0
-GAEC
 Wire Wire Line
 	5000 6350 5500 6350
 Wire Wire Line
@@ -798,10 +790,6 @@ Wire Wire Line
 Connection ~ 6250 6250
 Wire Wire Line
 	6250 6250 7650 6250
-Text HLabel 6450 6750 2    50   Output ~ 0
-Z80_RW
-Text HLabel 4000 4900 0    50   Output ~ 0
-~BUSACK
 Wire Wire Line
 	4000 4900 4400 4900
 $Comp
@@ -830,8 +818,6 @@ F 4 "652-4610X-1LF-3.3K" H 2900 4050 50  0001 C CNN "Mouser Part"
 	8    2900 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 5950 0    50   3State ~ 0
-~Z80IO
 $Comp
 L 74xx:74LS06 U37
 U 3 1 5DFAA25C
@@ -884,20 +870,12 @@ Wire Wire Line
 	2750 4350 2750 4800
 Wire Wire Line
 	3000 3750 3000 3850
-Text HLabel 1150 5100 0    50   Input ~ 0
-~PLA_Z80EN
-Text HLabel 1150 5300 0    50   Input ~ 0
-~AEC
 Wire Wire Line
 	1150 5300 1250 5300
 Wire Wire Line
 	1150 5100 1250 5100
-Text HLabel 1150 4350 0    50   Input ~ 0
-BA
 Wire Wire Line
 	1150 4350 1900 4350
-Text HLabel 1150 4800 0    50   Input ~ 0
-~MMU_Z80EN
 Wire Wire Line
 	1150 4800 1900 4800
 Wire Wire Line
@@ -938,8 +916,6 @@ F 4 "595-SN74LS07N" H 1600 2800 50  0001 C CNN "Mouser Part"
 	5    1600 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1100 2200 0    50   Input ~ 0
-ΦZ80
 Wire Wire Line
 	1100 2200 1200 2200
 Wire Wire Line
@@ -1144,4 +1120,28 @@ Wire Bus Line
 	7500 2150 7500 5100
 Wire Bus Line
 	9150 1100 9150 4800
+Text GLabel 1150 4350 0    50   Input ~ 0
+BA
+Text GLabel 4000 3200 0    50   Input ~ 0
+~IRQ
+Text GLabel 1150 5300 0    50   Input ~ 0
+~AEC
+Text GLabel 10600 900  2    50   Input ~ 0
+D1MHZ
+Text GLabel 1100 2200 0    50   Input ~ 0
+ΦZ80
+Text GLabel 4000 3500 0    50   Output ~ 0
+~M1
+Text GLabel 4000 4900 0    50   Output ~ 0
+~BUSACK
+Text GLabel 1150 5950 0    50   3State ~ 0
+~Z80_IO
+Text GLabel 5000 6350 0    50   Input ~ 0
+GAEC
+Text GLabel 6450 6750 2    50   Output ~ 0
+Z80_R~W
+Text GLabel 1150 5100 0    50   Input ~ 0
+~PLA_Z80EN
+Text GLabel 1150 4800 0    50   Input ~ 0
+~MMU_Z80EN
 $EndSCHEMATC

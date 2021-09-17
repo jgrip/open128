@@ -19,11 +19,8 @@ U 5DA449C5
 F0 "Keyboard" 50
 F1 "keyboard.sch" 50
 F2 "~NMI" O R 4500 4550 50 
-F3 "K[0..2]" O R 4500 4250 50 
-F4 "4080" O R 4500 4350 50 
 F5 "COL[0..7]" O L 3500 4250 50 
 F6 "ROW[0..7]" O L 3500 4350 50 
-F7 "CAPLK_SENSE" O R 4500 4450 50 
 $EndSheet
 $Sheet
 S 3500 3350 850  400 
@@ -32,9 +29,6 @@ F0 "Control Ports" 50
 F1 "controlports.sch" 50
 F2 "COL[0..7]" B L 3500 3450 50 
 F3 "ROW[0..7]" B L 3500 3550 50 
-F4 "POTY" O R 4350 3550 50 
-F5 "POTX" O R 4350 3450 50 
-F6 "~LP" O R 4350 3650 50 
 $EndSheet
 $Comp
 L Open128:6526 U1
@@ -248,13 +242,10 @@ F4 "DATAOUT" I L 6950 3950 50
 F5 "ATN" O R 7950 4600 50 
 F6 "CLK" O L 6950 4050 50 
 F7 "DATA" O L 6950 4150 50 
-F8 "~DRESET" I R 7950 3750 50 
 F9 "~EXTRES" I R 7950 4500 50 
 F10 "~SRQIN" B R 7950 4700 50 
 F11 "CNT" B R 7950 4250 50 
 F12 "SP" B R 7950 4350 50 
-F13 "128_64" I R 7950 3950 50 
-F14 "~FSDIR" I R 7950 3850 50 
 $EndSheet
 $Sheet
 S 8300 2900 900  400 
@@ -394,18 +385,6 @@ Wire Wire Line
 	7950 4500 8450 4500
 Wire Wire Line
 	8450 4500 8450 5050
-Text HLabel 8400 3750 2    50   Input ~ 0
-~DRESET
-Wire Wire Line
-	8400 3750 7950 3750
-Text HLabel 8400 3850 2    50   Input ~ 0
-~FSDIR
-Text HLabel 8400 3950 2    50   Input ~ 0
-128_64
-Wire Wire Line
-	8400 3850 7950 3850
-Wire Wire Line
-	7950 3950 8400 3950
 Wire Wire Line
 	7950 4700 8950 4700
 $Comp
@@ -579,8 +558,6 @@ Wire Wire Line
 Connection ~ 1300 850 
 Wire Wire Line
 	1300 850  900  850 
-Text HLabel 900  850  0    50   Input ~ 0
-R~W
 Entry Wire Line
 	6100 2550 6200 2450
 Entry Wire Line
@@ -749,18 +726,6 @@ Wire Wire Line
 	6950 4050 5900 4050
 Wire Wire Line
 	5900 4150 6950 4150
-Text HLabel 10100 1850 2    50   Output ~ 0
-VA14
-Text HLabel 10100 2200 2    50   Output ~ 0
-VA15
-Wire Bus Line
-	4500 4250 4600 4250
-Wire Bus Line
-	4600 4250 4600 1150
-Wire Bus Line
-	4600 1150 900  1150
-Text HLabel 900  1150 0    50   Input ~ 0
-K[0..2]
 Wire Wire Line
 	5900 5350 6000 5350
 Wire Wire Line
@@ -771,31 +736,9 @@ Wire Wire Line
 	4650 6550 4650 4550
 Wire Wire Line
 	4650 4550 4500 4550
-Text HLabel 4800 4550 2    50   Output ~ 0
-~NMI
-Text HLabel 4800 4350 2    50   Output ~ 0
-4080
-Text HLabel 4800 4450 2    50   Output ~ 0
-CAPLK
-Wire Wire Line
-	4500 4450 4800 4450
-Wire Wire Line
-	4800 4350 4500 4350
 Wire Wire Line
 	4650 4550 4800 4550
 Connection ~ 4650 4550
-Text HLabel 4800 3450 2    50   Output ~ 0
-POTX
-Text HLabel 4800 3550 2    50   Output ~ 0
-POTY
-Text HLabel 4800 3650 2    50   Output ~ 0
-~LP
-Wire Wire Line
-	4350 3650 4800 3650
-Wire Wire Line
-	4800 3550 4350 3550
-Wire Wire Line
-	4350 3450 4800 3450
 Wire Wire Line
 	5100 5650 2600 5650
 Wire Wire Line
@@ -821,12 +764,6 @@ Wire Wire Line
 	900  7200 2400 7200
 Wire Wire Line
 	1550 5550 900  5550
-Text HLabel 900  7200 0    50   Input ~ 0
-~IRQ
-Text HLabel 900  7300 0    50   Input ~ 0
-1MHZ
-Text HLabel 900  7400 0    50   Input ~ 0
-TOD
 Text Label 1550 2250 2    50   ~ 0
 ~CIA1
 Wire Wire Line
@@ -895,8 +832,6 @@ Wire Wire Line
 	1500 5350 1550 5350
 Wire Wire Line
 	6900 5350 9800 5350
-Text HLabel 900  5550 0    50   Input ~ 0
-D1MHZ
 Wire Wire Line
 	900  7300 2500 7300
 Text Label 3250 3900 1    50   ~ 0
@@ -1004,8 +939,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 3450 6750 3450
 Connection ~ 6300 3450
-Text HLabel 6750 3450 2    50   Output ~ 0
-~VA14
 $Comp
 L Open128:R_Network07_Split RP5
 U 3 1 5DE0E11B
@@ -1036,6 +969,24 @@ Wire Wire Line
 	1250 4850 1250 4950
 Wire Wire Line
 	6300 4350 5900 4350
+Text GLabel 900  7200 0    50   Input ~ 0
+~IRQ
+Text GLabel 900  850  0    50   Input ~ 0
+R~W
+Text GLabel 900  7400 0    50   Input ~ 0
+TOD
+Text GLabel 4800 4550 2    50   Output ~ 0
+~NMI
+Text GLabel 900  7300 0    50   Input ~ 0
+1MHZ
+Text GLabel 900  5550 0    50   Input ~ 0
+D1MHZ
+Text GLabel 10100 1850 2    50   Output ~ 0
+VA14
+Text GLabel 10100 2200 2    50   Output ~ 0
+VA15
+Text GLabel 6750 3450 2    50   Output ~ 0
+~VA14
 Wire Bus Line
 	7800 650  7800 3100
 Wire Bus Line

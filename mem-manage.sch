@@ -350,12 +350,8 @@ Wire Bus Line
 	3000 1150 1000 1150
 Text HLabel 1000 1150 0    50   BiDi ~ 0
 D[0..7]
-Text HLabel 1000 5300 0    50   Input ~ 0
-2MHZ
 Wire Wire Line
 	1000 5300 3400 5300
-Text HLabel 1000 5600 0    50   Input ~ 0
-4080
 Wire Wire Line
 	1000 5600 3400 5600
 $Comp
@@ -396,14 +392,6 @@ Wire Wire Line
 	9950 5450 10500 5450
 Wire Wire Line
 	9950 6000 10500 6000
-Text HLabel 10500 6000 2    50   Output ~ 0
-~GCAS1
-Text HLabel 10500 5450 2    50   Output ~ 0
-~GCAS0
-Text HLabel 1000 6400 0    50   Input ~ 0
-~EXROM
-Text HLabel 1000 6500 0    50   Input ~ 0
-~GAME
 Wire Wire Line
 	1000 6400 3150 6400
 Wire Wire Line
@@ -437,8 +425,6 @@ Wire Wire Line
 Connection ~ 4700 4550
 Wire Wire Line
 	4700 4550 5850 4550
-Text HLabel 10500 6300 2    50   Output ~ 0
-128_64
 $Comp
 L Device:C_Small C7
 U 1 1 5DB61051
@@ -530,10 +516,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 2550 4400 2550
 Connection ~ 5450 2550
-Text HLabel 1000 650  0    50   Input ~ 0
-R~W
-Text HLabel 1000 550  0    50   Input ~ 0
-MUX
 Wire Wire Line
 	1000 550  4500 550 
 Wire Wire Line
@@ -570,16 +552,12 @@ F 4 "595-SN74LS08N" H 2100 1500 50  0001 C CNN "Mouser Part"
 $EndComp
 Wire Wire Line
 	1800 1600 1000 1600
-Text HLabel 1000 1600 0    50   Input ~ 0
-DMA
 Wire Wire Line
 	4600 1500 4600 2650
 Wire Wire Line
 	4600 2650 4400 2650
 Text Label 2400 1500 0    50   ~ 0
 GAEC
-Text HLabel 1000 1250 0    50   Input ~ 0
-AEC
 Wire Wire Line
 	1000 1250 1700 1250
 Wire Wire Line
@@ -593,18 +571,12 @@ Wire Wire Line
 Connection ~ 1700 1250
 Wire Wire Line
 	1700 1250 5650 1250
-Text HLabel 6500 1350 2    50   Output ~ 0
-GAEC
-Text HLabel 6500 1150 2    50   Output ~ 0
-~Z80EN
 Wire Wire Line
 	4800 1150 4800 3050
 Wire Wire Line
 	4800 3050 4400 3050
 Wire Wire Line
 	4800 1150 6500 1150
-Text HLabel 1000 950  0    50   Input ~ 0
-~BUSACK
 Wire Wire Line
 	1000 950  5200 950 
 Wire Wire Line
@@ -620,16 +592,12 @@ Wire Wire Line
 Connection ~ 2700 1500
 Wire Wire Line
 	2700 1500 4600 1500
-Text HLabel 1000 850  0    50   Input ~ 0
-BA
 Wire Wire Line
 	1000 850  5750 850 
 Wire Wire Line
 	5750 850  5750 2450
 Wire Wire Line
 	5750 2450 5850 2450
-Text HLabel 1000 6600 0    50   Input ~ 0
-~Z80_IO
 Wire Wire Line
 	1000 6600 4800 6600
 Wire Wire Line
@@ -655,8 +623,6 @@ Wire Wire Line
 	4400 5600 4400 6200
 Wire Wire Line
 	4400 6200 10500 6200
-Text HLabel 10500 6200 2    50   Output ~ 0
-FSDIR
 $Comp
 L power:+5V #PWR0298
 U 1 1 5DCA0679
@@ -694,8 +660,6 @@ Wire Wire Line
 	5750 5550 5750 6800
 Wire Wire Line
 	5750 6800 1000 6800
-Text HLabel 1000 6800 0    50   Input ~ 0
-~VA14
 $Comp
 L 74xx:74LS138 U3
 U 1 1 5DD0AAE3
@@ -781,8 +745,6 @@ Wire Bus Line
 Connection ~ 7200 750 
 Wire Bus Line
 	7200 750  8300 750 
-Text HLabel 7200 1950 0    50   Input ~ 0
-M1
 Wire Wire Line
 	7200 1950 7500 1950
 NoConn ~ 9600 1450
@@ -904,16 +866,6 @@ Wire Wire Line
 	6850 4450 10500 4450
 Wire Wire Line
 	6850 5050 10500 5050
-Text HLabel 10500 2550 2    50   Input ~ 0
-~CAS
-Text HLabel 10500 2750 2    50   Output ~ 0
-~GWE
-Text HLabel 10500 4350 2    50   Output ~ 0
-~DWE
-Text HLabel 10500 4450 2    50   Output ~ 0
-~IOACC
-Text HLabel 10500 5050 2    50   Output ~ 0
-CLRBNK
 $Comp
 L power:GND #PWR0304
 U 1 1 5DEDA24A
@@ -1162,4 +1114,52 @@ Wire Bus Line
 	3000 1150 3000 4750
 Wire Bus Line
 	3100 750  3100 3750
+Text GLabel 1000 850  0    50   Input ~ 0
+BA
+Text GLabel 1000 650  0    50   Input ~ 0
+R~W
+Text GLabel 1000 1250 0    50   Input ~ 0
+AEC
+Text GLabel 10500 6200 2    50   Output ~ 0
+~FSDIR
+Text GLabel 10500 5050 2    50   Output ~ 0
+CLRBNK
+Text GLabel 1000 1600 0    50   Input ~ 0
+~DMA
+Text GLabel 1000 5300 0    50   Input ~ 0
+2MHZ
+Text GLabel 1000 550  0    50   Input ~ 0
+MUX
+Text GLabel 10500 2550 2    50   Input ~ 0
+~CAS
+Text GLabel 10500 2750 2    50   Output ~ 0
+~GWE
+Text GLabel 10500 4450 2    50   Output ~ 0
+~IOACC
+Text GLabel 10500 4350 2    50   Output ~ 0
+~DWE
+Text GLabel 1000 6800 0    50   Input ~ 0
+~VA14
+Text GLabel 1000 6400 0    50   Input ~ 0
+~EXROM
+Text GLabel 1000 6500 0    50   Input ~ 0
+~GAME
+Text GLabel 1000 6600 0    50   Input ~ 0
+~Z80_IO
+Text GLabel 10500 6300 2    50   Output ~ 0
+128_64
+Text GLabel 1000 950  0    50   Input ~ 0
+~PLA_Z80EN
+Text GLabel 6500 1350 2    50   Output ~ 0
+GAEC
+Text GLabel 6500 1150 2    50   Output ~ 0
+~MMU_Z80EN
+Text GLabel 7200 1950 0    50   Input ~ 0
+~M1
+Text GLabel 1000 5600 0    50   Input ~ 0
+40_80
+Text GLabel 10500 5450 2    50   Output ~ 0
+~GCAS0
+Text GLabel 10500 6000 2    50   Output ~ 0
+~GCAS1
 $EndSCHEMATC

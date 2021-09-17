@@ -110,12 +110,6 @@ Wire Bus Line
 	3800 1250 1000 1250
 Text HLabel 1000 1250 0    50   BiDi ~ 0
 A[0..15]
-Text HLabel 3500 2850 0    50   Input ~ 0
-R~W
-Text HLabel 3500 4550 0    50   Input ~ 0
-EXT_AUDIO
-Text HLabel 3500 4750 0    50   Input ~ 0
-1MHZ
 Wire Wire Line
 	3200 2550 4100 2550
 Wire Wire Line
@@ -178,10 +172,6 @@ Wire Wire Line
 	4000 4400 4000 4350
 Wire Wire Line
 	4000 4350 4100 4350
-Text HLabel 2500 3650 0    50   Input ~ 0
-POTX
-Text HLabel 2500 3750 0    50   Input ~ 0
-POTY
 Wire Wire Line
 	2500 3650 2700 3650
 Wire Wire Line
@@ -567,8 +557,6 @@ Wire Wire Line
 	8150 4900 8500 4900
 Wire Wire Line
 	8500 4900 8500 5100
-Text HLabel 9000 4900 2    50   Output ~ 0
-AUDIO_OUT
 Wire Wire Line
 	8500 4900 9000 4900
 Connection ~ 8500 4900
@@ -610,4 +598,16 @@ Wire Bus Line
 	3800 1250 3800 3350
 Wire Bus Line
 	5400 1150 5400 3650
+Text GLabel 3500 2850 0    50   Input ~ 0
+R~W
+Text GLabel 3500 4750 0    50   Input ~ 0
+1MHZ
+Text GLabel 9000 4900 2    50   Output ~ 0
+AUDIO_OUT
+Text GLabel 3500 4550 0    50   Input ~ 0
+EXT_AUDIO
+Text GLabel 2500 3650 0    50   Input ~ 0
+POTX
+Text GLabel 2500 3750 0    50   Input ~ 0
+POTY
 $EndSCHEMATC

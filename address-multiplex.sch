@@ -129,8 +129,6 @@ Text Label 3000 5250 0    50   ~ 0
 A14
 Wire Bus Line
 	1000 3800 3300 3800
-Text HLabel 1000 6250 0    50   Input ~ 0
-~DMA
 Wire Wire Line
 	1000 6250 1900 6250
 Wire Wire Line
@@ -259,8 +257,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 5450 3900 5450
 Connection ~ 1900 6250
-Text HLabel 1000 6350 0    50   Input ~ 0
-~AEC
 Wire Wire Line
 	1000 6350 3700 6350
 Wire Wire Line
@@ -639,8 +635,6 @@ Wire Wire Line
 Wire Wire Line
 	8700 5900 8800 5900
 Connection ~ 6150 6350
-Text HLabel 1000 6450 0    50   Input ~ 0
-MUX
 Wire Wire Line
 	1000 6450 1600 6450
 Wire Wire Line
@@ -928,8 +922,6 @@ F 3 "" H 9650 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 2050 1000 2050
-Text HLabel 1000 2050 0    50   Input ~ 0
-~RAS
 $Comp
 L 74xx:74LS373 U17
 U 1 1 6022E8E6
@@ -1037,10 +1029,6 @@ Wire Wire Line
 Text Label 4900 1650 0    50   ~ 0
 SA3
 Connection ~ 5200 3700
-Text HLabel 1000 600  0    50   Input ~ 0
-VA6
-Text HLabel 1000 700  0    50   Input ~ 0
-VA7
 Text Label 3000 1350 0    50   ~ 0
 VMA6
 Entry Wire Line
@@ -1081,16 +1069,10 @@ Wire Wire Line
 Connection ~ 1400 700 
 Wire Wire Line
 	1400 700  1000 700 
-Text HLabel 1000 1350 0    50   Input ~ 0
-VA14
-Text HLabel 1000 1650 0    50   Input ~ 0
-VA15
 Wire Wire Line
 	1000 1350 2000 1350
 Wire Wire Line
 	1000 1650 2000 1650
-Text HLabel 1000 3400 0    50   Input ~ 0
-AEC
 Wire Wire Line
 	2000 2550 1600 2550
 Wire Wire Line
@@ -1554,4 +1536,22 @@ Wire Bus Line
 	1700 3900 1700 5150
 Wire Bus Line
 	6100 1100 6100 3800
+Text GLabel 1000 3400 0    50   Input ~ 0
+AEC
+Text GLabel 1000 6350 0    50   Input ~ 0
+~AEC
+Text GLabel 1000 6250 0    50   Input ~ 0
+~DMA
+Text GLabel 1000 6450 0    50   Input ~ 0
+MUX
+Text GLabel 1000 600  0    50   Input ~ 0
+VA6
+Text GLabel 1000 700  0    50   Input ~ 0
+VA7
+Text GLabel 1000 2050 0    50   Input ~ 0
+~RAS
+Text GLabel 1000 1650 0    50   Input ~ 0
+VA15
+Text GLabel 1000 1350 0    50   Input ~ 0
+VA14
 $EndSCHEMATC
